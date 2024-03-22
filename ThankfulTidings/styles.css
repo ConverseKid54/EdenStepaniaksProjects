@@ -1,0 +1,113 @@
+/* Resetting default styles and setting background color for my website */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DBCDB3;
+}
+
+/* Added in a container/ Selector class so that everything fits better and more presentable. SRC:https://www.w3schools.com/w3css/w3css_containers.asp and https://www.w3schools.com/cssref/sel_class.php */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+/* This is where I added in styling for the header section. (The top of each page) */
+ header {
+    background-color: #b6562a; 
+    color: #FFFFFF; 
+    padding: 10px 0; /* Added padding to make site pop a little more */
+}
+
+/* I added in navaigation so users can navigate through my website smoothly */
+ nav ul {
+    list-style: none; /* Got rid of default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Made the navigation items appear to be in a row */
+}
+
+/* Added in navigation styles for the menu items */
+nav ul li {
+    margin-left: 20px; /* Adding margin (space) between navigation items, this makes the nav menu easier to find and read! */
+}
+
+/* Added styles in so the links in the navigation bar appear pretty and look professonial. */
+ nav a {
+    text-decoration: none; /* I removed the ugly underline under the text */
+    color: #fff; /* Setting text color to a basic white */
+    font-weight: bold; 
+    font-size: 16px; 
+}
+/* I learned about class selectors on W3Schools. SRC: https://www.w3schools.com/cssref/sel_class.php
+/* This is to ensure the image is placed where I want it to be on the website! */
+.logo img {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: -2px; /* Adjusted the margin to place the image where I want it. */
+}
+
+/* This is the same styling for the logo image, just in this case its for the text right under the logo! */
+.logo-text {
+    color: #fff; 
+    margin-top: 0;
+    font-size: 18px; 
+}
+
+/* Put the logo in a container so it remains in a set spot! SRC:https://www.w3schools.com/w3css/w3css_containers.asp and https://www.w3schools.com/cssref/sel_class.php */
+.logo-container {
+    display: flex; /* This is where you display the items in the column */
+    flex-direction: column; /* I set the column layout */
+    align-items: center; /* Centered items */
+}
+
+/* Just like the logo, I had to add styles to place image where I want and avoid image of getting fuzzy. */
+ .turkey-img {
+    width: 100%; 
+    max-height: 250px; 
+    height: auto; 
+    object-fit: cover;
+}
+
+/* This is styling so the text in each page is centered and not automaticly going to the left.*/
+.main-content {
+    text-align: center; /* All I did was centered the text */
+}
+
+/* This container is for the header, it keeps all the content in place! */
+.header-container {
+    display: flex; 
+    align-items: flex-end; 
+    justify-content: space-between;
+    height: 100%; 
+}
+
+ /* Here we are adding in the footer, this will display a orange bar at the bottom of each screen */
+.about-us-image {
+    display: block;
+    margin: 0 auto;
+    width: 800px; 
+    height: auto; 
+    border: 5px solid #b6562a; 
+    margin-top: 25px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #382615; 
+    padding: 10px 0;
+    text-align: center;
+    color: #fff; 
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+footer a {
+    color: #b6562a; 
+   
+}
